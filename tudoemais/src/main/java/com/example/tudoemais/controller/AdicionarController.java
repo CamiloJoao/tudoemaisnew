@@ -1,4 +1,4 @@
-package com.projeto.tudoemais.controller;
+package com.example.tudoemais.controller;
 
 import java.util.List;
 
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.ui.Model;
 
-import com.projeto.tudoemais.model.CategoriaService;
-import com.projeto.tudoemais.model.Produto;
-import com.projeto.tudoemais.model.ProdutoDTO;
-import com.projeto.tudoemais.model.ProdutoService;
+import com.example.tudoemais.model.CategoriaService;
+import com.example.tudoemais.model.Produto;
+import com.example.tudoemais.model.ProdutoDTO;
+import com.example.tudoemais.model.ProdutoService;
 // import com.projeto.tudoemais.model.Produtotool;
 
 

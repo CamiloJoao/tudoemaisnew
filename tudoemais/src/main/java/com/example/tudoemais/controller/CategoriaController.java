@@ -1,4 +1,4 @@
-package com.projeto.tudoemais.controller;
+package com.example.tudoemais.controller;
 
 
 import java.util.List;
@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import org.springframework.ui.Model;
 
-import com.projeto.tudoemais.model.Categoria;
-import com.projeto.tudoemais.model.CategoriaService;
+import com.example.tudoemais.model.Categoria;
+import com.example.tudoemais.model.CategoriaService;
 
 
 @Controller
