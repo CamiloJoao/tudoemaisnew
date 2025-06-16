@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Access Denied</title>
+<link rel="stylesheet" th:href="@{/css/main.css}">
+</head>
+<body>
+
+	<header>
+        
+        <a th:href="@{/principal}">Tudo & Mais</a>
+
+        <nav>
+            <a th:href="@{/adicionar}">Adicionar Produto</a>
+            <a th:href="@{/adicionarcategoria}">Adicionar Categoria</a>
+            <a th:href="@{/listagem}">Listar Produtos</a>
+            <a th:href="@{/listagemCategoria}">Listar Categorias</a>
+        </nav>    
+
+    </header>
+	<article>
+		<div class="table-container">
+			<h2>Sorry, you don't have permission!</h2>
+		</div>
+	</article>
+
+	  <footer>
+         <a th:href="@{/logout}">Sair</a> 
+    </footer>
+	
+</body>
+</html>

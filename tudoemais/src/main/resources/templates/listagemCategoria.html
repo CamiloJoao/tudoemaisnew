@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.thymeleaf.org">
 <head>
-    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
     <title>Listagem de Categoria</title>
 </head>
 <body>
@@ -36,7 +36,7 @@
                 <tbody>
                     <tr th:each="categoria : ${categorias}">
                         <td th:text="${categoria.id}"></td>
-                        <td th:text="${categoria.nomeCategoria}"></td>
+                        <td th:text="${categoria.nome}"></td><!--nomeCategoria-->
                         <td>
                             <form th:action="@{'/deletarcategoria/' + ${categoria.id}}" method="post">
                                 <input type="submit" value="Apagar">

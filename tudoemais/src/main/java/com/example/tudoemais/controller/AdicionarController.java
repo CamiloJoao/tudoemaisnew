@@ -15,7 +15,7 @@ import com.example.tudoemais.model.CategoriaService;
 import com.example.tudoemais.model.Produto;
 import com.example.tudoemais.model.ProdutoDTO;
 import com.example.tudoemais.model.ProdutoService;
-// import com.projeto.tudoemais.model.Produtotool;
+
 
 
 @Controller
@@ -25,7 +25,7 @@ public class AdicionarController {
     private ApplicationContext context;
     
 
-    @GetMapping("/")
+    @GetMapping("/principal")
     public String Principal(){
         return "principal";
     }

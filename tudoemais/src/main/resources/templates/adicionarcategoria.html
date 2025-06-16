@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Página inicial</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
 </head>
 <body>
     <header>
@@ -34,7 +34,7 @@
             </form>
 
             <form th:action="@{/adicionarcategoria}" method="post" th:object="${categoria}">
-                Adicionar Categoria: <input type="text" th:field="*{nomeCategoria}"><br>
+                Adicionar Categoria: <input type="text" th:field="*{nome}"><br><!--nomeCategoria-->
 
                 <input type="submit" value="Adicionar categoria" name="adicionarcategoria">
             </form>

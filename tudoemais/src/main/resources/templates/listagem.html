@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.thymeleaf.org">
 <head>
-    <link href="/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
     <title>Listagem de Produtos</title>
 </head>
 <body>
@@ -41,7 +41,7 @@
                         <td th:text="${produto.nome}"></td>
                         <td th:text="${produto.descricao}"></td>
                         <td th:text="${produto.preco}"></td>
-                        <td th:text="${produto.categoria.nomeCategoria}"></td>
+                        <td th:text="${produto.categoria != null ? produto.categoria.nome : 'Sem categoria'}"></td>
                         <td><a th:href="@{'/atualizar/' + ${produto.id}}">Atualizar</a></td>
                         <td>
                             <form th:action="@{'/deletarproduto/' + ${produto.id}}" method="post">
