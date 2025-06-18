@@ -28,6 +28,15 @@ article {
     align-items: center;
 }
 
+footer {
+    background-color: rgb(200, 247, 240);
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
 .table-container {
     width: 100%;
     display: grid;

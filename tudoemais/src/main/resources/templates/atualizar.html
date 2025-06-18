@@ -7,7 +7,7 @@
 <body>
     <header>
         
-        <a th:href="@{/}">Tudo & Mais</a>
+        <a th:href="@{/principal}">Tudo & Mais</a>
 
         <nav>
             <a th:href="@{/adicionar}">Adicionar Produto</a>
@@ -37,9 +37,11 @@
                         </select><br>
                         <input type="submit" value="Atualizar" >
             </form>
-        </div>
-        
+        </div> 
     </article>
+    <footer>
+         <a th:href="@{/logout}">Sair</a> 
+    </footer>
 
 </body>
 </html>

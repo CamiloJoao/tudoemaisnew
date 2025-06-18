@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.ui.Model;
 
 import com.example.tudoemais.model.CategoriaService;
@@ -60,7 +61,7 @@ public class AdicionarController {
         return "listagem";
     }
 
-    @PostMapping("/deletarproduto/{id}")
+    @RequestMapping("/deletarproduto/{id}")
     public String deletarproduto(@PathVariable int id){
         ProdutoService ps = context.getBean(ProdutoService.class);
         ps.deletarProduto(id);

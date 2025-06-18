@@ -1,0 +1,22 @@
+server: 
+    port: 8080
+
+spring:
+    datasource:
+        url: jdbc:postgresql://dpg-d19g25m3jp1c73cckun0-a.oregon-postgres.render.com:5432/tudoemais_db
+        username: tudoemais_db_user
+        password: XmfYMADEOzcj6evQaAiawnsZKGs73I8X
+        driver-class-name: org.postgresql.Driver
+        initialize: true
+    
+    jpa:
+        hibernate:
+            dialect: org.hibernate.dialect.PostgreSQLDialect
+            ddl-auto: update
+            generate-ddl: true
+        
+    sql:
+        init:
+            schema-locations: classpath:/schema-postgresql.sql
+            mode: always
+            platform: postgres 

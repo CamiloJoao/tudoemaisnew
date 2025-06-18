@@ -7,7 +7,7 @@
 <body>
     <header>
         
-        <a th:href="@{/}">Tudo & Mais</a>
+        <a th:href="@{/principal}">Tudo & Mais</a>
 
         <nav>
             <a th:href="@{/adicionar}">Adicionar Produto</a>
@@ -55,7 +55,10 @@
                 <p th:text="${error}"></p>
             </div>
         </div>
-    </article>    
+    </article>  
+    <footer>
+         <a th:href="@{/logout}">Sair</a> 
+    </footer>  
     
 </body>
 </html>

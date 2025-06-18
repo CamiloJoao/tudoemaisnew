@@ -1,6 +1,3 @@
-
-
-
 package com.example.tudoemais.model;
 
 
@@ -21,7 +18,7 @@ public class WebSecurityConfig {
 
     @Bean
     public UserDetailsService userDetailsService() {
-        return new UserDetailsServiceImpl(); // Caminho ajustado para seu projeto
+        return new UserDetailsServiceImpl(); 
     }
 
     @Bean
@@ -47,7 +44,7 @@ public class WebSecurityConfig {
         http
             .authorizeHttpRequests(auth -> auth
             .requestMatchers("/css/**").permitAll()
-            .requestMatchers("/atualizar/**").hasRole("ADMIN")
+            .requestMatchers("/atualizar/**", "/deletarproduto/**").hasRole("ADMIN")
             .anyRequest().authenticated()
         )
             .formLogin(form -> form
